@@ -28,6 +28,7 @@ Asks for ID of user, passphrase, and filename
 Decrypts file with user's private key
 
 Add Digital Signature
+
 Asks for ID of user, passphrase, and filename
 Generates a hash of the file and encrypts with user's private key
 Attaches generated signature to the end of the file
