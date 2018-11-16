@@ -33,6 +33,8 @@ public class Key {
 		}
 
 		public void setPassphrase(String passphrase) {
+			int pass = passphrase.hashCode();
+			passphrase = Integer.toString(pass);
 			this.passphrase = passphrase;
 		}
 		
