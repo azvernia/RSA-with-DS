@@ -19,7 +19,7 @@ public class KeyRing {
 			userInput.nextLine();
 			//need to add exception if input isn't 0<option<4
 			
-			//option 1 adds a key
+			//adds a key
 			if (option==1) {
 				Key key = new Key();
 				
@@ -143,6 +143,7 @@ public class KeyRing {
 					}
 				}while(passFlag==false);
 			}
+			//verifies digital signature of a file
 			else if(option == 6)
 			{
 				System.out.println("Enter User ID: ");
@@ -176,7 +177,6 @@ public class KeyRing {
 	
 	}
 	
-	//refactor please
 	static Key findKey(String userID) {
 		for (Key key : keyRing) {
 			if (key.getUserID().matches(userID)) {
