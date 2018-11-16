@@ -3,7 +3,8 @@
 Implementation of RSA Schema with digital signature
 
 
-Run from KeyRing
+Executable is rsa.jar
+Run from command line with java -jar rsa.jar
 
 
 Menu options are
