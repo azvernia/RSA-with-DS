@@ -56,7 +56,8 @@ public class KeyRing {
 				do {
 					System.out.println("Enter passphrase: ");
 					String passphrase = userInput.nextLine();
-					
+					int pass = passphrase.hashCode();
+					passphrase = Integer.toString(pass);
 					if (passphrase.matches(keyToRemove.getPassphrase()) == false) {
 						System.out.println("Passesphases don't match");
 					}
@@ -64,7 +65,7 @@ public class KeyRing {
 						keyRing.remove(keyToRemove);
 						passFlag = true;
 					}
-				}while(passFlag);
+				}while(passFlag == false);
 				
 				
 			}
@@ -77,6 +78,8 @@ public class KeyRing {
 				do {
 					System.out.println("Enter passphrase: ");
 					String passphrase = userInput.nextLine();
+					int pass = passphrase.hashCode();
+					passphrase = Integer.toString(pass);
 					if (passphrase.matches(keyToUse.getPassphrase()) == false) {
 						System.out.println("Passesphases don't match");
 					}
@@ -103,6 +106,8 @@ public class KeyRing {
 				do {
 					System.out.println("Enter passphrase: ");
 					String passphrase = userInput.nextLine();
+					int pass = passphrase.hashCode();
+					passphrase = Integer.toString(pass);
 					if (passphrase.matches(keyToUse.getPassphrase()) == false) {
 						System.out.println("Passesphases don't match");
 					}
@@ -125,6 +130,8 @@ public class KeyRing {
 				do {
 					System.out.println("Enter passphrase: ");
 					String passphrase = userInput.nextLine();
+					int pass = passphrase.hashCode();
+					passphrase = Integer.toString(pass);
 					if (passphrase.matches(keyToUse.getPassphrase()) == false) {
 						System.out.println("Passesphases don't match");
 					}
@@ -145,6 +152,8 @@ public class KeyRing {
 				do {
 					System.out.println("Enter passphrase: ");
 					String passphrase = userInput.nextLine();
+					int pass = passphrase.hashCode();
+					passphrase = Integer.toString(pass);
 					if (passphrase.matches(keyToUse.getPassphrase()) == false) {
 						System.out.println("Passesphases don't match");
 					}
