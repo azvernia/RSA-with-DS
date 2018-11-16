@@ -23,17 +23,18 @@ Menu options are
 7.) Exit
 
 
-Create key
+
+**Create key**
 
 Generates a key and sets a userID and passphrase assiociated with that key
 
 
-Delete key
+**Delete key**
 
 Deletes the key associated with the entered userID. Requires passphrase
 
 
-Encrypt File
+**Encrypt File**
 
 Asks for ID of user and passphrase.
 
@@ -42,14 +43,14 @@ Then asks for filename and userID of recepient of the file
 Encrypts file with public key of recepient
 
 
-Decrypt File
+**Decrypt File**
 
 Asks for ID of user, passphrase, and filename
 
 Decrypts file with user's private key
 
 
-Add Digital Signature
+**Add Digital Signature**
 
 Asks for ID of user, passphrase, and filename
 
@@ -58,7 +59,7 @@ Generates a hash of the file and encrypts with user's private key
 Attaches generated signature to the end of the file
 
 
-Verify Digital Signature
+**Verify Digital Signature**
 
 Asks for ID of user, passphrase, filename, and userID of sender
 
@@ -71,7 +72,7 @@ Generates hash of the payload.
 Compares hash of payload and decrypted signature, if equal seperate signature from file
 
 
-Exit
+**Exit**
 
 Exits the program
 
