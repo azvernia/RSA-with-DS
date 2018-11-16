@@ -4,10 +4,12 @@ Implementation of RSA Schema with digital signature
 
 
 Executable is rsa.jar
+
 Run from command line with java -jar rsa.jar
 
 
-Menu options are
+
+**Menu options are**
 
 1.) Create key
 
