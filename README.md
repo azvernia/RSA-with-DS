@@ -1,6 +1,6 @@
 # RSA-with-DS
 
-Implementation of RSA Schema with digital signature
+Implementation of RSA algorithm with digital signature
 
 
 Executable is rsa.jar
